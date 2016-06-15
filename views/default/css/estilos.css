@@ -1,0 +1,431 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+
+html {
+	font-family: Oxygen;
+	min-height: 100%;
+	
+	}
+
+body{
+    margin:0px;
+    background: #00aa77;
+    background-image: url("https://lh4.googleusercontent.com/-OYJdVmV52iI/VAO-k3t6hsI/AAAAAAAAAwg/oJ1t2XhkoQU/w389-h509-no/ZenBG-1.png"), url("https://lh4.googleusercontent.com/-x0-k97Q7y98/VAO-kvtcbbI/AAAAAAAAAwc/RfV3G_tmPmA/s491-no/ZenBG-2.png");
+    background-repeat: repeat-x, repeat;
+
+}
+#contenedor{
+    width:100%;
+	position: relative;
+}
+#header{
+    width:100%;
+    background-color:white;	
+}
+#cuerpo{
+    width:80%;
+    height :auto;
+    margin:0 auto;
+		position:relative;
+	clear:both;
+}
+#footer{
+    width:100%;
+    background-color:white;
+	clear:both;
+	position: relative;
+     bottom:0px;
+    
+}
+#log ul{list-style:none;}
+
+#log li{float:right; font-size: 12px;
+  font-weight: bold;
+  padding: 14px 10px;
+  }
+
+#log a {color: rgb(0,110,46);
+       }
+
+#imag imlogo {
+	width: 80%;
+	float: left;
+	}
+#menu1 {
+clear: both;
+float: left;
+width: 100%;
+list-style: none;
+margin: 0;
+padding: 0;
+
+}
+#menu1 li {
+text-align: center;
+padding: .2em 0 .2em .5em;
+width:18%;
+display: inline;
+float: left;
+color: rgb(0,110,46);
+font-size: 13px;
+font-weight: bold;
+text-decoration:underline;
+text-transform: uppercase;
+}
+#menu1 li a {
+padding: .3em;
+display: block;
+text-decoration: none;
+color: #333;
+}	
+#menu1 li ul {display: none;
+		   text-align:center;
+		   width:100%;
+		   margin:auto;
+		   padding:0;
+		   float:left;
+		   border:1px solid #7C7C7C;
+		   } 
+#menu1 li li a{display:block;
+text-decoration: none;
+}			  
+#menu1 li:hover ul {
+   display: block;
+  
+}
+#menu1 li li{float:left;
+			 width:95%;
+			 padding: .2em 0 .2em .5em;
+			 text-align:center;
+		  }	   
+
+#operaciones header{
+		   width:100%;}
+.new fieldset{margin:auto;
+                                 border-style:none;
+                                  }
+.new fieldset legend {text-align:center;
+           font-weight:bold;}								  
+.new div{
+							  margin: 2em;
+							  }							  
+.new label{width: 25%;
+                               float: left;							   
+							   }
+.new input{width:35%;}
+#cantidad_contenido, #peso_unitario, ·#medida{width:10%;}
+#imagen_configuracion{width:80%;
+}
+#configuracion {float:right;}
+#texto_presentacion{float:left;
+                    width:50%;					
+                    text-align:left;
+                    margin-left:5px;					                					
+					}
+#div_login{width:35%;
+margin:5% auto;}					
+#login{width:100%;}
+#login div{width:100%;}
+#login input{ background: none repeat scroll 0 0 white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 -5px 45px #E0D087 inset, 0 1px 1px #E0D087;
+    color: black;
+    font-size: 13px;
+    outline: medium none;
+	margin-bottom: 20px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	width:94%;
+}
+#login .boton_ingresar{background:  linear-gradient(to bottom, #1C9B6D 0px, #E0D087 100%) repeat scroll 0 0 transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 #E6F5FF inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	width:100%;
+}
+.new, #tabla_listado_alimentos, #tabla_listado_alarmas  { background-color: white; padding: 14px 10px;    border-radius: 18px 18px 18px 18px; margin:auto;
+-moz-border-radius: 18px 18px 18px 18px;
+-webkit-border-radius: 18px 18px 18px 18px;
+border: 0px solid #000000;
+ font-size: 14px;
+ width:100%;
+
+}
+#tabla_listado_alertas  { background-color: white; padding: 14px 10px;    border-radius: 18px 18px 18px 18px; margin:auto;
+-moz-border-radius: 18px 18px 18px 18px;
+-webkit-border-radius: 18px 18px 18px 18px;
+border: 0px solid #000000;
+ font-size: 14px;
+ text-align:center;
+ width:75%;
+ height:150px;
+}
+#tabla_info{text-align:left;
+                      width:80%; 
+					 background-color: white; padding: 14px 10px;    border-radius: 18px 18px 18px 18px; margin:auto; }
+#tabla_info th{background:#1C9B6D;
+          color:white;}
+#tabla_info td{background:#ECEDED;
+                       padding: .3em;height:10px;width:50%;
+					   text-align:center;
+}
+		  
+#operaciones  { background:white;
+		   padding: 14px 10px ;    border-radius: 18px 18px 18px 18px; margin:0 auto;
+-moz-border-radius: 18px 18px 18px 18px;
+-webkit-border-radius: 18px 18px 18px 18px;
+border: 0px solid #000000;
+text-align:center;}					
+
+#footer p {  text-align: center; padding: 14px 10px;}
+
+#tabla_listado_alertas  td{ padding: .3em;width:50%;}
+#tabla_listado_alimentos  td{ padding: .3em;height:10px;width:10%;text-align:center;}
+#tabla_listado_alimentos tbody tr, #tabla_listado_alertas tbody tr{background:#ECEDED;}					 
+#tabla_listado_alimentos tbody tr:hover {
+background: #E0D087;
+}
+#tabla_listado_alimentos  td a, #tabla_listado_alertas td a, #tabla_info a {text-decoration:none;
+                             color:white;
+							 border:1px solid black;
+							 background:#1C9B6D;
+                             box-shadow: 2px 2px 3px 0px rgba(0,0,0,.8);
+                             display:block;
+							 padding: .1em;
+							 text-align:center;							 }	
+.nav{height: 40px; text-align: center; display:block;
+clear:both;
+ }
+			 
+.nav a{
+  color: rgb(0,110,46);
+  font-size: 13px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+  
+  }  
+.nav li{display: inline}
+.jumbotron {
+  background-image:url('http://bancoalimentario.org.ar/wp-content/uploads/2013/12/voluntariado.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  height: 400px;  
+   border-radius: 18px 18px 18px 18px;
+-moz-border-radius: 18px 18px 18px 18px;
+-webkit-border-radius: 18px 18px 18px 18px;
+border: 0px solid #000000;
+}
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: "Shift", sans-serif;
+  font-weight: bold;
+  text-shadow:5px 5px 5px #000000;
+   
+}
+.learn-more header{text-align:center;}
+.learn-more {
+  text-align:center;
+  background-color: white; 
+   border-radius: 18px 18px 18px 18px;
+-moz-border-radius: 18px 18px 18px 18px;
+-webkit-border-radius: 18px 18px 18px 18px;
+border: 0px solid #000000;
+ }
+
+.learn-more h3 {
+  font-family: "Shift", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  height: 30px;
+   padding: 14px 10px;
+   text-align:center;
+}
+.resaltar{font-weight:bold;
+          color:#E42328;
+		  font-size:20px;
+						 }
+.imagen_equipo img{width:100%;
+               height:350px;
+			   }
+.imagen_equipo{  float:right;
+	          width:45%;
+			  margin-top:30px;
+			   margin-right:5px;
+             			   
+}
+						 
+.clear{clear:both;}	
+.learn-more p { height: 100px; padding: 14px 10px }
+.header_login{text-align:center;
+              height:130px;
+			  }
+
+.imagen_login{width:10%; 
+              height:80px;             
+			  margin:5% auto;
+			  }	
+							   
+.div_botones_alta_alimentos{ text-align:center;             
+                             width:100%;
+                      }	
+.div_botones_alta_alimentos input{display:inline;
+width:20%;
+background: #E0D087;
+font-weight: bold;
+margin:5px;
+border-radius:3px; 
+box-shadow: 2px 2px 2px 2px rgba(0,0,0,.8);
+}	
+.header_alta {text-align:center;}
+					 
+.especial{background:#1C9B6D;
+          color:white;}						 							 
+
+.imagen_agregar{height:40px;
+                width:40px;
+ }				
+.redes_sociales{
+           width:50%;
+		   margin:10px;
+}
+.redes_sociales img{width:7%; height:30px;}
+
+.h3_numero{ text-shadow:2px 2px 3px 1px #E0D087;width:40%; margin:10px auto; border-radius: 18px 18px 18px 18px; }	
+.mensaje{width:80%; 
+         background:#ECEDED;        
+		 margin:100px auto;
+		 border:5px solid white;
+		 border-radius:5px; 
+         box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
+		 text-align:center;
+}
+ .mensaje header  {border-bottom:10px solid #E0D087; 
+
+ }	
+.mensaje h1{text-shadow: 2px 2px #E0D087;}
+
+#block{
+    width:100%;
+    height:100%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+	background-color:black;
+	opacity:0.5;                                        
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+    top:0;
+    left:0;
+}
+#res{    
+    
+    display: none;
+    padding: 5px;
+    border: 5px solid #1C9B6D;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+    width: 30%;
+	height:250px;
+    left: 35%; /*(100%-60%)/2*/
+    top:15%;
+    box-shadow:1px 1px 5px black;
+	background:white;
+    z-index: 2;
+}
+#res2{    
+    
+    display: none;
+    padding: 5px;
+    border: 5px solid #1C9B6D;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+    width: 30%;
+	height:250px;
+    left: 35%; /*(100%-60%)/2*/
+    top:35%;
+    box-shadow:1px 1px 5px black;
+	background:white;
+    z-index: 2;
+}
+#close{width:10%;
+height:30px;
+border: 5px solid #1C9B6D;
+background:white;
+float:right;
+text-align:center; 
+font-weight:bold;
+}
+#config{text-align:center; font-weight:bold;
+ }
+ #config fieldset{border-style:none;}
+#config fieldset div { margin: 2em;}
+#config fieldset input{font-weight:bold;text-align:center;width:100%}
+#config fieldset input:focus{border-color:#666; font-size:16px;}
+#config .botones_row input{background:#1C9B6D;width:25%;color:white;}
+.imagen_volver{width:40px;height:40px;}
+#resultado{  display: none;
+    padding: 5px;
+	height:auto;    
+	margin:auto;
+    width: 80%;    
+	background:white;
+	text-align:center;}
+#div_seleccion{margin:auto; text-align:center; font-weight:bold; height:100px;
+} 
+#estadisticas select {background:#E0D087;
+}             
+.formulario{margin:auto; display:block;
+    padding: 5px;	
+    width: 80%;
+	height:auto;
+	background:white;
+	}	
+.formulario fieldset, #estadisticas fieldset{border-style:none;}             
+.boton_agregar{
+background:#ECEDED;  width:25%; height:20px; margin-bottom:3%; padding:3px;text-align:center;border-bottom: 5px solid white;
+}
+.boton_agregar a{ text-decoration:none;color:black;}
+.boton_agregar:hover, #tabla_listado_alimentos  td a:hover{
+background: #E0D087;
+ text-shadow: 0 1px rgba(0, 0, 0, 0.3); border-bottom: 5px solid rgba(0, 0, 0, 0.55);
+    border-radius: 6px 6px 6px 6px;
+}
+#turnos{display:none; width:65%; float:left;
+}
+#form_turnos{display:block;width:100%;border:2px solid green; margin:auto; }
+#tabla_listado_alimentos a.ver_turno {
+ background-color:#F7AA4F;
+}
+#tabla_listado_alimentos span.sin_mostrar {
+ background:#ECEDED;
+ color:black;
+}
+#calendario{float:left; width:35%;}
+#alimentos{display:none; background:white; width:80%;margin: 5% auto;}
+#msj{display:none;
+     color:red;}
+#detalles{
+width:100%;
+height:100px;
+text-align:center;
+}
+#detalles select{
+border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 -5px 45px #E0D087 inset, 0 1px 1px #E0D087;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	width:35%;
+	text-align:center;
+}
+#elecciones{
+display:none;
+}
+.eleccion{background:red;}

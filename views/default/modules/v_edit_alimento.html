@@ -1,0 +1,40 @@
+<a href="javascript:history.back()" class = "volver" title="volver"> <img class="imagen_volver" src="../views/default/images/volver.png" alt="Volver"> </a>
+<header class="header_alta">					        
+		<h2>MODIFICAR ALIMENTO</h2>	
+        <!-- <h4><?php // echo $detalle_alimento['descripcion'];?></h4><?php // echo $detalle_alimento['cantidad_contenido'];?>	no entiendo para que es esto -->
+</header>
+<form id="alta_alimento" class="new" action="../controller/c_apply_edit_alimento.php" method="POST">			    
+			<fieldset> 
+			     <legend> Seleccione un Alimento </legend>
+                         <input type="hidden" name="id_detalle_alimento" id="id_detalle_alimento" value="<?php echo $detalle_alimento['id_detalle_alimento'];?>">				 
+                         <div><label for="alimento_codigo">Alimento: </label>	
+						 <select id="alimento_codigo" name="alimento_codigo" required>	
+					             <option value="<?php echo $detalle_alimento['alimento_codigo'];?>" selected="selected"><?php echo $detalle_alimento['descripcion'];?></option>
+								 <?php  foreach ($codigos_descripciones as $c_d):?>
+                                       <option value="<?php echo $c_d['codigo'];?>"><?php echo $c_d['descripcion'];?></option>
+						         <?php endforeach;?>
+								 
+                          </select>		 
+						  </div>
+			</fieldset>			 			
+            <fieldset> 	 
+                  	<legend>Detalle Del Alimento</legend>	
+					<div><label for="fecha_vencimiento"> Fecha_Vencimiento: </label>
+					<input type="date" id="fecha_vencimiento" name="fecha_vencimiento" value="<?php echo $detalle_alimento['fecha_vencimiento'];?>" required ></div>					
+					<div>
+					<span>Cantidad:(Ejemplo:4 x 5 lt)</span>				
+<!-- no seria id=cantidad ?? --><input type="number" min="0" id="cantidad_contenido" name="cantidad_contenido" value="<?php echo $detalle_alimento['cantidad_contenido'];?>" required>
+					<span>Peso_Unitario:</span>
+					<input type="number" min="0" id="peso_unitario" name="peso_unitario" value="<?php echo $detalle_alimento['peso_unitario'];?>" required>
+					<span>Medida:</span>	
+					<input type="text" id="medida" name="medida" value="<?php echo $detalle_alimento['medida'];?>" required></div>	
+				    <div><label for="stock">Stock: </label>					
+				    <input type="number" min="0" id="stock" name="stock" value="<?php echo $detalle_alimento['stock'];?>" required></div>
+				    <div><label for="stock">Reservado: </label>					
+				    <input type="number" min="0" id="reservado" name="reservado" value="<?php echo $detalle_alimento['reservado'];?>" required></div> 	
+			</fieldset>			
+			<div class="div_botones_alta_alimentos">
+			<input type="submit" name="Modificar" value="Modificar">
+			<input type="reset" name="limpiar" value="Limpiar"></div>							
+		    
+</form>

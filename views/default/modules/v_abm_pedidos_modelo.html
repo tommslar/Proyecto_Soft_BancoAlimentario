@@ -1,0 +1,54 @@
+<header class="header_alta">
+					        <h2>LISTADO DE PEDIDOS</h2>
+</header>
+<div class="boton_agregar">
+<a href="../controller/c_definir_turno.php" title="agregar_pedido">Confeccion y Entrega de Pedido </a>
+</div>
+<table id="tabla_listado_alimentos">
+        <thead class="especial">
+                            <tr>
+							     <th>NUMERO DE PEDIDO</th>
+                                 <th>FECHA INGRESO DEL PEDIDO</th>
+                                 <th>CON ENVIO</th>
+								 <th>ESTADO</th>
+                                 <th>RAZON SOCIAL</th>
+								 <th>TELEFONO</th>
+								 <th>DOMICILIO</th>
+								 <th colspan="6">OPERACIONES</th>
+								 
+                            </tr>
+        </thead>
+        <tbody>
+						   <?php $index =0; foreach ($pedidos_modelo as $p_m){$index++?>
+						                  <tr>
+										      										  
+										      <td><?php echo $p_m['numero_pedido_modelo'];?></td>
+											  <td><?php echo $p_m['fecha_ingreso'];?></td>
+										      <td><?php if($p_m['con_envio'] == 1){
+											               echo 'Si';
+											               }else{
+														   echo 'No';
+											  }?></td> 
+											  <td><?php echo $p_m['descripcion'];?></td>
+										      <td><?php echo $p_m['razon_social'];?></td>	
+											  <td><?php echo $p_m['telefono'];?></td>											  
+											  <td><?php echo $p_m['domicilio'];?></td>
+	
+											  <td><a href="../controller/c_ver_alimento.php?detalle_alimento_id=<?php echo $p_m['detalle_alimento_id'];?>&numero_pedido=<?php echo $p_m['numero_pedido_modelo'];?>" title="ver alimento">Ver Alimento</a></td> 
+											  <td> <a href="../controller/c_ver_turno_entrega.php?turno_entrega_id=<?php echo $p_m['turno_entrega_id'];?>&numero_pedido=<?php echo $p_m['numero_pedido_modelo'];?>" title="ver turno">ver Turno</a></td>
+											  <td>
+												   <?php if($p_m['con_envio'] == 1){ ?>
+											               <div><a href="../controller/c_mostrar_recorrido.php?entidad_receptora_id=<?php echo $p_m['entidad_receptora_id'];?>" title="mostrar recorrido">Mostrar Recorrido</a></div>
+											        <?php } ?>
+											  </td>
+											  <?php if($p_m['estado_pedido_id'] != 1){ ?>
+											      <td><a href="../controller/c_enviar_pedido.php?numero=<?php echo $p_m['numero_pedido_modelo'];?>" title="enviar pedido">Enviar</a>
+											      </td>
+											      <td><a href="../controller/c_edit_pedido.php?numero=<?php echo $p_m['numero_pedido_modelo'];?>" title="editar">Editar</a></td> 
+											      <td> <a href="../controller/c_delete_pedido.php?numero=<?php echo $p_m['numero_pedido_modelo'];?>" title="agregar">Eliminar</a></td>
+                                              <?php } ?>
+											 
+										  </tr>
+							<?php }?>					
+        </tbody>
+</table>

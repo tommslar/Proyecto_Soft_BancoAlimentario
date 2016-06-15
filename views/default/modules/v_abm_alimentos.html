@@ -1,0 +1,42 @@
+<header class="header_alta">
+					        <h2>LISTADO DE ALIMENTOS</h2>
+</header>
+<div class="boton_agregar">
+<a href="../controller/c_new_alimento.php" title="agregar alimento"> Agregar Alimento </a>
+</div>
+<table id="tabla_listado_alimentos">
+        <thead class="especial">
+                            <tr>
+							     <th>CODIGO</th>
+                                 <th>DESCRIPCION</th>
+                                 <th>FECHA DE VENCIMIENTO</th>
+                                 <th>CANTIDAD_CONTENIDO</th>
+								 <th>X</th>
+								 <th>PESO UNITARIO</th>								 
+								 <th>MEDIDA</th>
+								 <th>STOCK</th>
+								 <th>RESERVADO</th>
+								 
+								 <th colspan="3">OPERACIONES</th>
+                            </tr>
+        </thead>
+        <tbody>
+						   <?php foreach ($alimentos as $a){?>
+						                  <tr>
+										      <td><?php echo $a['alimento_codigo'];?></td>
+											  <td><?php echo $a['descripcion'];?></td>
+										      <td><?php echo $a['fecha_vencimiento'];?></td> 
+										      <td><?php echo $a['cantidad_contenido'];?></td>	
+											  <td>X</td>
+											  <td><?php echo $a['peso_unitario'];?></td>											  
+											  <td><?php echo $a['medida'];?></td>
+										      <td><?php echo $a['stock'];?></td>
+											  <td><?php echo $a['reservado'];?></td>
+											  
+											  <td><a href="../controller/c_edit_alimento.php?id_detalle_alimento=<?php echo $a['id_detalle_alimento'];?>" title="editar">editar</a></td> 
+											  <td> <a href="../controller/c_delete_alimento.php?id_detalle_alimento=<?php echo $a['id_detalle_alimento'];?>" title="agregar">eliminar</a></td>
+											 
+										  </tr>
+							<?php }?>					
+        </tbody>
+</table>

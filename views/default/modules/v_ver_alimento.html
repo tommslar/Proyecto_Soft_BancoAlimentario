@@ -1,0 +1,22 @@
+<a href="javascript:history.back()" class = "volver" title="volver"> <img class="imagen_volver" src="../views/default/images/volver.png" alt="Volver"> </a>
+<header class="header_alta">
+					        <h2>DATOS DEL ALIMENTO</h2>
+							<h3 class ="h3_numero">NUMERO DE PEDIDO: <?php echo $pedido_numero;?> </h3>
+</header>
+<table id="tabla_info">
+						                  <tr>										      										  
+										      <th>CODIGO</th><td><?php echo $detalle_alimento['alimento_codigo'];?></td>
+										  </tr>  
+										  <tr>  
+											  <th>DESCRICION</th><td><?php echo $descripcion['descripcion'];?></td>
+										  </tr>  
+										  <tr> 
+										      <th>FECHA VENCIMIENTO</th><td><?php echo $detalle_alimento['fecha_vencimiento'];?></td>
+										  </tr>  
+										  <tr> 
+										      <th>CONTENIDO</th><td><?php echo $detalle_alimento['cantidad_contenido'];?> X <?php echo $detalle_alimento['peso_unitario'];?> <?php echo$detalle_alimento['medida'];?></td>
+										  </tr>  
+										  <tr>  
+											  <th>CANTIDAD A ENVIAR</th><td><?php echo $cantidad['cantidad'];?></td>
+									      </tr>				
+</table>
